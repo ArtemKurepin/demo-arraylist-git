@@ -11,5 +11,6 @@ public class Main {
         cities.add("Brest");
         cities.add("Ghomel");
         System.out.println(cities);
+        cities.set(2, "Molodechno");
     }
 }
