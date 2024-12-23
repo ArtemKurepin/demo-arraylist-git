@@ -11,6 +11,11 @@ public class Main {
         cities.add("Brest");
         cities.add("Ghomel");
         System.out.println(cities);
+
         cities.set(2, "Molodechno");
+        System.out.println(cities);
+        CitiesUtil.printCitiesLenght(cities);
+        System.out.println(CitiesUtil.cityWithMaxLengh(cities));
+
     }
 }
