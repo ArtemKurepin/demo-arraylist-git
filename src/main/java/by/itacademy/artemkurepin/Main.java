@@ -17,6 +17,7 @@ public class Main {
         CitiesUtil.printCitiesLenght(cities);
         System.out.println("Город с максимальной длинной "+CitiesUtil.cityWithMaxLenght(cities));
         System.out.println("Город с минимальной длинной "+CitiesUtil.cityWithMinLenght(cities));
-
+        System.out.println(CitiesUtil.findCityByFirstLetter(cities,'g'));
+        System.out.println(CitiesUtil.findCityByFirstLetter(cities,'G'));
     }
 }
