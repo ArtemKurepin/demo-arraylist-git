@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<String> cities = new ArrayList<>();
         cities.add("Moscow");
-        cities.add("Minsk");
+        cities.add("Gua");
         cities.add("New York");
         cities.add("Brest");
         cities.add("Ghomel");
@@ -15,7 +15,8 @@ public class Main {
         cities.set(2, "Molodechno");
         System.out.println(cities);
         CitiesUtil.printCitiesLenght(cities);
-        System.out.println(CitiesUtil.cityWithMaxLengh(cities));
+        System.out.println("Город с максимальной длинной "+CitiesUtil.cityWithMaxLenght(cities));
+        System.out.println("Город с минимальной длинной "+CitiesUtil.cityWithMinLenght(cities));
 
     }
 }

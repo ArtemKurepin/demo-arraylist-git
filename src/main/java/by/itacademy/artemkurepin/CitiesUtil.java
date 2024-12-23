@@ -4,20 +4,33 @@ import java.util.ArrayList;
 
 public class CitiesUtil {
 
-    static public String cityWithMaxLengh(ArrayList<String> cities) {
+    static public String cityWithMaxLenght(ArrayList<String> cities) {
         int maxCityLenght = cities.get(0).length();
-        String maxLengthCity=null;
+        String maxLengthCity = null;
         for (String city : cities) {
             if (city.length() > maxCityLenght) {
                 maxCityLenght = city.length();
-                maxLengthCity=city;
+                maxLengthCity = city;
             }
         }
-        return maxLengthCity+" length: "+maxCityLenght;
+        return maxLengthCity + " length: " + maxCityLenght;
     }
-    static public void printCitiesLenght(ArrayList<String> cities){
-        for(String city: cities){
-            System.out.println(city+" length: "+city.length());
+
+    static public void printCitiesLenght(ArrayList<String> cities) {
+        for (String city : cities) {
+            System.out.println(city + " length: " + city.length());
         }
+    }
+
+    static public String cityWithMinLenght(ArrayList<String> cities) {
+        int minCityLenght = cities.get(0).length();
+        String minLengthCity = null;
+        for (String city : cities) {
+            if (city.length() < minCityLenght) {
+                minCityLenght = city.length();
+                minLengthCity = city;
+            }
+        }
+        return minLengthCity + " length: " + minCityLenght;
     }
 }
