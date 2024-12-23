@@ -1,6 +1,7 @@
 package by.itacademy.artemkurepin;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class CitiesUtil {
 
@@ -33,4 +34,16 @@ public class CitiesUtil {
         }
         return minLengthCity + " length: " + minCityLenght;
     }
+
+    static public String findCityByFirstLetter(ArrayList<String> cities, char firstLetter){
+        String tempChar= ""+firstLetter;
+
+        for (String city: cities){
+            if (city.toLowerCase().charAt(0)==tempChar.toLowerCase().charAt(0)){
+                return city;
+            }
+        }
+        return "";
+    }
+
 }
